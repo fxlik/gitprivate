@@ -10,6 +10,7 @@ use App\Http\Requests\Crud\UpdateRequest;
 
 class CrudController extends Controller
 {
+    //yur
     /**
      * Display a listing of the resource.
      *
@@ -96,5 +97,5 @@ class CrudController extends Controller
         $cruds = Crud::findOrFail($id);
         $cruds->delete();
         return redirect()->route('crud.index')->with('alert-success', 'data berhasil diubah');
-    }
+    } 
 }
